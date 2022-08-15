@@ -1,6 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
+}
+body{
+    background-color: #e5e5e5;;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    background-image: url(https://a6e8z9v6.stackpathcdn.com/realsoccer/demo2/wp-content/themes/realsoccer/images/page-title-background.jpg);
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    background-position: center;
+}
+header::before{
+    background-color: rgba(0, 0, 0, 0.685);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+header .header-container
+{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 20px;
+}
+header .header-container .top-navigation
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header-container .top-navigation .top-navigation-center{
+    position: absolute;
+    top: 21px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .header-container .top-navigation .top-social-wrapper
+{
+    display: flex;
+}
+header .header-container .top-navigation .top-social-wrapper .social-icon img{
+    width: 24px;
+    margin-right: 14px;
+}
+.header-container .nav-menu
+{
+    margin-top: 124px;
+}
+.header-container .nav-menu .nav-menu-container
+{
+    max-width: 1100px;
+}
+.header-container .nav-menu .nav-menu-container .nav-menu-wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.header-container .nav-menu .nav-menu-container .nav-menu-wrapper li a
+{
+    color: #fefefe;
+    opacity: 1;
+    font-size: 17px;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 28px;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.nav-menu #search-icon{
+    margin-right: 0;
+    position: absolute;
+    top: 88%;
+    font-size: 14px;
+    padding: 5px;
+    margin-top: -12px;
+    right: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+.banner{
+    width: 100%;
+    height: 120vh;
+    background-image: url(https://a6e8z9v6.stackpathcdn.com/realsoccer/demo2/wp-content/uploads/2017/02/slider-hp2-1.jpg);
+    background-position: center;
+}
+@media only screen and (max-width: 600px) {
+    
 }
