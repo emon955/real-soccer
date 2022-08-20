@@ -17,8 +17,6 @@ header
     width: 100%;
     height: auto;
     background-image: url(https://a6e8z9v6.stackpathcdn.com/realsoccer/demo2/wp-content/themes/realsoccer/images/page-title-background.jpg);
-    /* padding-top: 20px;
-    padding-bottom: 20px; */
     background-position: center;
 }
 header::before{
@@ -99,6 +97,69 @@ header .header-container .top-navigation .top-social-wrapper .social-icon img{
     background-image: url(https://a6e8z9v6.stackpathcdn.com/realsoccer/demo2/wp-content/uploads/2017/02/slider-hp2-1.jpg);
     background-position: center;
 }
-@media only screen and (max-width: 600px) {
-    
+@media only screen and (max-width: 800px) {
+    header 
+    {
+        background-color: #515151!important;
+        background-image: none;
+    }
+    header .header-container 
+    {
+        width: 100%;
+    }
+    header .header-container .top-navigation .top-navigation-center {
+        left: 53%;
+    }
+    .header-container .nav-menu .nav-menu-container .nav-menu-wrapper li
+    {
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    header .header-container .top-navigation{
+        display: flex;
+        flex-direction: column;
+    }
+    header .header-container .top-navigation .top-navigation-center {
+        top: 136px;
+        left: 66%;
+    }
+    header .header-container .top-navigation .top-navigation-center img{
+        width: 40%;
+    }
+    header .header-container .top-navigation .top-navigation-right{
+        margin-top: 15px;
+        margin-left: 72px;
+    }
+    .header-container .nav-menu .nav-menu-container .nav-menu-wrapper{
+        position: absolute;
+        width: 52%;
+        right: 39px;
+        top: 100%;
+        background-color:  #727272;
+        padding: 0;
+        flex-direction: column;
+        margin: 0;
+    }
+    .header-container .nav-menu .nav-menu-container .nav-menu-wrapper li{
+        padding-top: 11px;
+    }
+    header .header-container .top-navigation .top-navigation-left img{
+        width: 40%;
+    }
+    .nav-menu #search-icon{
+        display: none;
+    }
+    .header-container .nav-menu {
+        margin-top: 58px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    header .header-container .top-navigation .top-navigation-center img {
+        width: 64%;
+    }
+    .header-container .nav-menu .nav-menu-container .nav-menu-wrapper{
+        width: 76%;
+        right: 0px;
+    }
 }
