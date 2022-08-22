@@ -46,6 +46,20 @@ header .header-container .top-navigation .top-navigation-center{
     left: 50%;
     transform: translateX(-50%);
 }
+header .header-container .top-navigation .top-navigation-center .top-navigation-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header-container .top-navigation .top-navigation-center .top-navigation-row .menu-bar{
+    display: none;
+}
+header .header-container .top-navigation .top-navigation-center .top-navigation-row .menu-bar i{
+    font-size: 30px;
+    padding: 5px 10px;   
+    color: white;
+    background: #ccc;
+}
 header .header-container .top-navigation .top-social-wrapper
 {
     display: flex;
@@ -122,10 +136,11 @@ header .header-container .top-navigation .top-social-wrapper .social-icon img{
     }
     header .header-container .top-navigation .top-navigation-center {
         top: 136px;
-        left: 66%;
+        left: 61%;
+        width: 145px;
     }
     header .header-container .top-navigation .top-navigation-center img{
-        width: 40%;
+        width: 54%;
     }
     header .header-container .top-navigation .top-navigation-right{
         margin-top: 15px;
@@ -140,6 +155,15 @@ header .header-container .top-navigation .top-social-wrapper .social-icon img{
         padding: 0;
         flex-direction: column;
         margin: 0;
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+    }
+    .header-container .nav-menu .nav-menu-container .nav-menu-wrapper.active{
+        display: block;
+        visibility: visible;
+        opacity: 1;
     }
     .header-container .nav-menu .nav-menu-container .nav-menu-wrapper li{
         padding-top: 11px;
@@ -152,6 +176,9 @@ header .header-container .top-navigation .top-social-wrapper .social-icon img{
     }
     .header-container .nav-menu {
         margin-top: 58px;
+    }
+    header .header-container .top-navigation .top-navigation-center .top-navigation-row .menu-bar{
+        display: block;
     }
 }
 @media only screen and (max-width: 500px) {
